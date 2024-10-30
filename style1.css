@@ -1,0 +1,41 @@
+  
+    /* Estilos de Flexbox */
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+  
+      .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+  
+      .nav-links li {
+        padding: 0;
+      }
+  
+      .banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 300px; /* Ajusta la altura según tus necesidades */
+      }
+  
+      .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+      }
+  
+      .map {
+        width: 100%; /* Ajusta el ancho según tus necesidades */
+        height: 400px; /* Ajusta la altura según tus necesidades */
+      }
+  
+      .footer {
+        text-align: center;
+      }
+   

@@ -1,0 +1,278 @@
+/* Estilos generales */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #A4F3E0;
+  color: #333;
+}
+
+/* Estilos del encabezado */
+header {
+  background-color: #333;
+  color: #767372;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  align-items: left;
+}
+
+.logo {
+  font-size: 24px;
+  margin-left: 20px;
+  color: #767372;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin-right: 20px;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #767372;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff6f61;
+}
+
+/* Estilos de la sección del banner */
+.banner {
+  background-color: #767372;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+/* Estilo para el h1 en el banner */
+.banner h1 {
+  font-size: 36px;
+  margin: 0;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Estilos para las secciones de contenido */
+.content {
+  padding: 80px;
+  background-color: #767372;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.content h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Estilos para el pie de página */
+.footer {
+  background-color: #333;
+  color: #767372;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Estilos para el mapa de Google */
+.map {
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  /* Add these styles for responsiveness */
+  overflow: hidden; /* Hide overflowing content */
+}
+
+/* Make the iframe responsive */
+.map iframe {
+  width: 100%;
+  height: 300px; /* To maintain the aspect ratio */
+  border: 0; /* Remove iframe border */
+}
+
+
+/* Estilos para el carrusel */
+.swiper-container {
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+
+.swiper-slide {
+  flex-shrink: 0;
+}
+
+/* Estilos para las imágenes en el banner */
+.slider-image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+/* Animación de deslizamiento */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-500%);
+  }
+}
+
+/* Animación de transición */
+@keyframes fade {
+  0%, 100% {
+    opacity: 0;
+  }
+  10%, 90% {
+    opacity: 1;
+  }
+}
+/* Estilos para la sección de Ofertas Especiales */
+.countdown {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.timer {
+  font-size: 18px;
+}
+
+.countdown-timer {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff6f61;
+}
+
+.special-offers {
+  display: flex;
+  justify-content: space-between;
+}
+
+.offer {
+  flex-basis: calc(50% - 10px);
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.offer img {
+  width: 100%;
+  border-radius: 10px;
+}
+.m-ofe{
+  text-align: center;
+  align-items: center;
+}
+/* Estilos para la sección de Misión y Visión */
+.mission,
+.vision {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.mission h3,
+.vision h3 {
+  font-size: 24px;
+  color: #333;
+}
+
+.mission p,
+.vision p {
+  font-size: 18px;
+}
+
+/* Estilos para el botón de menú */
+.menu-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  margin-right: 20px;
+  font-size: 24px; /* Añadimos un tamaño de fuente para mostrar el icono del menú */
+  color: #767372; /* Color del icono del menú */
+  transition: color 0.3s; /* Transición para el cambio de color al pasar el mouse */
+}
+
+/* Estilos para el menú de navegación en dispositivos móviles */
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  opacity: 0; /* Oculta el menú por defecto */
+  pointer-events: none; /* Evita interacciones con el menú oculto */
+  transition: opacity 0.3s;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #333; /* Fondo del menú */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  min-width: 150px;
+  transform-origin: top;
+  transform: scaleY(0);
+}
+
+.nav-links.active {
+  opacity: 1; /* Muestra el menú cuando se agrega la clase "active" */
+  pointer-events: auto; /* Permite interacciones con el menú visible */
+  transform: scaleY(1);
+}
+
+.nav-links li {
+  margin: 10px 0;
+}
+
+/* Estilos adicionales para mejorar la apariencia del menú móvil */
+.menu-toggle:hover {
+  color: #ff6f61; /* Cambiamos el color del icono del menú al pasar el mouse */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff; /* Cambiamos el color del texto a blanco */
+  font-weight: 600;
+  padding: 8px 20px; /* Espaciado más grande para hacer clic fácilmente */
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #ff6f61; /* Cambiamos el fondo al color de resaltado */
+  color: #333; /* Cambiamos el color del texto al color principal */
+}

@@ -1,0 +1,88 @@
+ *{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	background: url(anime.jpg);
+	background-size: cover;
+	font-family: sans-serif;
+}
+
+.box {
+  width: 600px;
+  height: 400px;
+   background: rgba(0, 0, 0, .4);
+  padding: 20px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 4%;
+  color: white;
+  font-family: 'Century Gothic', sans-serif;
+  border-radius: 15px;
+}
+
+
+
+.login{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 360px;
+	height: 420px;
+	padding: 80px 40px;
+	box-sizing: border-box;
+	background-color: #F013El;
+}
+
+
+h2{
+  margin: 0;
+  padding: 10 10 10px;
+  color: #D6AB18;
+  text-align: center;
+}
+
+
+.login input{
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.login input[type="text"],
+.login input[type="password"]{
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+}
+
+.login input[type="submit"]{
+	border: none;
+	outline: none;
+	height: 40px;
+	content: #fff;
+	font-size: 16px;
+	background: #D6AB18;
+	cursor: pointer;
+	border-radius: 17px;
+}
+.login input[type="submit"]:hover{
+	background: #FD667;
+	color: #262626;
+}
+.login p{
+	color: #fff;
+	font-weight: bold;
+}
+.registro{
+	font-family: Arial, Helvetica, sans-serif;
+	color:aqua;
+}

@@ -1,0 +1,30 @@
+/* ... (código de estilos anterior) ... */
+
+/* Estilos para las ofertas */
+.ofertas-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .oferta {
+    width: calc(50% - 20px);
+    margin: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  /* Mostrar ofertas con animación */
+  .oferta-show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* ... (otros estilos) ... */
+  

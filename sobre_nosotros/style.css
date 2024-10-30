@@ -1,0 +1,139 @@
+/* Reset de estilos */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos del fondo */
+body {
+ /* background-color:rgba(0, 0, 0, 0.1);*/
+ background-color:greenyellow;
+  font-family: Arial, sans-serif;
+  color: #333; /* Color de texto principal */
+  text-align: center;
+  align-items:center;
+}
+
+/* Estilos del encabezado */
+header {
+  background-color: #0077B6; /* Fondo azul oscuro */
+  color: #fff; /* Texto blanco */
+  padding: 20px 0; /* Mayor espacio en la parte superior e inferior */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra ligeramente más fuerte */
+}
+
+/* Estilos para el logo y el texto */
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra horizontalmente el contenido */
+  text-align: center;
+  margin-left: 0%;
+}
+
+.logo img {
+  width: 80px; /* Tamaño del logo ajustado */
+  height: auto;
+  border-radius: 10%;
+  margin-right: 10px;
+}
+
+/* Estilos del menú */
+.nav-container {
+  padding: 20px;
+  text-align: center;
+  align-items:center;
+  align-content: center;
+  margin: 0 auto;
+  color: white;
+  font-family: 'Century Gothic', sans-serif;
+}
+
+/* Estilos de los elementos del menú */
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente los elementos */
+  margin-left: 0%;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  transition: color 0.3s;
+  display: block; /* Asegura que los elementos ocupen todo el ancho disponible */
+  text-align: center; /* Centra el texto horizontalmente */
+}
+
+.nav-links a:hover {
+  color: #ff6f61;
+}
+
+/* Estilos del contenido */
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Estilos de las cajas */
+.box {
+  background-color: #fff; /* Fondo blanco */
+  border: 1px solid #ccc; /* Borde delgado gris */
+  border-radius: 10px; /* Esquinas redondeadas */
+  padding: 20px;
+  text-align: center;
+  color: #333; /* Color de texto principal */
+}
+
+.box img {
+  display: block;
+  margin: 0 auto;
+  width: 80px; /* Tamaño de imagen ajustado */
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Posicionamiento de las cajas */
+.box:nth-child(1) {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+
+.box:nth-child(2),
+.box:nth-child(3) {
+  grid-row: 2;
+}
+
+.box:nth-child(4),
+box:nth-child(5) {
+  grid-row: 3;
+}
+
+.box:nth-child(6) {
+  grid-column: 1 / span 2;
+  grid-row: 4;
+}
+
+/* Estilos del contenedor de la sección */
+.container-section {
+  background-color: rgba(0, 0, 0, 0.1); /* Color de fondo gris claro */
+  border: 1px solid #ccc; /* Borde delgado gris */
+  border-radius: 10px; /* Esquinas redondeadas */
+  padding: 20px;
+  color: #333; /* Color de texto principal */
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 1200px; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centra el contenedor en la página */
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Hotel Ejemplo</title>
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">Hotel Ejemplo</div>
+    <nav class="nav-container">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="./noticia/index.html">Ofertas</a></li>
+        <li><a href="./galeria/index.html">Fotos</a></li>
+        <li><a href="./contacto/index.html">Sobre Nosotros</a></li>
+        <li><a href="./contacto/index.html">Contactos</a></li>
+        <li><a href="./blog/index.html">Ubicación</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+  </header>
+  
+  
+
+  <!-- Sección del banner con botones de navegación -->
+  <section id="banner" class="banner">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="https://res.cloudinary.com/simpleview/image/upload/v1642787126/clients/loscabosmx/Copia_de_Copia_de_Esperanza_0010x_8dcb97e1-1c39-4cd8-8e36-326ec39d65b3.jpg" alt="" class="slider-image">
+        </div>
+        <div class="swiper-slide">
+          <img src="./fotos/7.jpg" alt="" class="slider-image">
+        </div>
+      </div>
+      <!-- Botones de navegación -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </section>
+
+  <h2 class="m-ofe">Ofertas Especiales</h2>
+  <section id="ofertas" class="content">
+    <div class="countdown">
+      <h3>¡Oferta Especial!</h3>
+      <p>Reserva ahora y obtén un descuento del 20% en todas las habitaciones.</p>
+      <div class="timer">
+        <p>Tiempo restante para la oferta:</p>
+        <div id="countdown-timer" class="countdown-timer"></div>
+      </div>
+    </div>
+    <div class="m-ofe">
+      <h3>Más Ofertas</h3>
+    </div>
+    <div class="special-offers">
+      
+      <div class="offer">
+        <img src="./fotos/7.jpg" alt="Oferta 1">
+        <p>¡Reserva 3 noches y obtén la 4ta noche gratis!</p>
+      </div>
+      <div><br></div>
+      <div class="offer">
+        <img src="./fotos/1.jpg" alt="Oferta 2">
+        <p>Desayuno gratuito incluido en todas las reservas.</p>
+      </div>
+    </div>
+  </section>
+  
+  <h2 class="m-ofe">Misión y Visión</h2> 
+  <section id="misionvision" class="content">
+    <div class="mission">
+      <h3>Nuestra Misión</h3>
+      <p>Nuestra misión es brindar a nuestros huéspedes una experiencia inolvidable, ofreciendo un servicio excepcional y comodidad en un entorno acogedor.</p>
+    </div>
+    <div class="vision">
+      <h3>Nuestra Visión</h3>
+      <p>Nuestra visión es convertirnos en el hotel líder en hospitalidad, reconocido por la excelencia en servicio y compromiso con la satisfacción del cliente.</p>
+    </div>
+  </section>
+  
+  <h2 class="m-ofe">Ubicación</h2>
+  <section id="ubicacion" class="content">
+    <div id="map" class="map">
+      <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1952922.721558269!2d-99.03467990625003!3d17.057865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c7224024a960b1%3A0xc424a4d3500d8098!2sHotel%20Nacional!5e0!3m2!1ses-419!2smx!4v1693937143277!5m2!1ses-419!2smx" width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Derechos Reservados &copy; 2023 Hotel Ejemplo</p>
+  </footer>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
